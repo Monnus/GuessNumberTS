@@ -8,6 +8,7 @@ var htmlClassAgain = document.querySelector(".again");
 htmlClassMessage.textContent = "❌Wrong or 🟢Right guess Number!";
 htmlClassScore.textContent = "10";
 htmlClassHighScore.textContent = "0";
+htmlClassNumber.textContent = "?";
 var highScoreCount = 0;
 var stateOfPlay = true;
 var getRandomNum = function () {
@@ -23,16 +24,16 @@ var guessCheckNumber = getRandomNum();
 var againFn = function () {
     htmlClassMessage.textContent = "❌Wrong or 🟢Right, guess Number!";
     guessCheckNumber = getRandomNum();
-    htmlClassNumber.textContent = String(guessCheckNumber);
+    htmlClassGuess.value = "";
+    htmlClassNumber.textContent = "?";
     htmlClassScore.textContent = "10";
     document.querySelector("body").style.backgroundColor = "#222";
     htmlClassNumber.style.width = "14rem";
-    console.log('====================================');
+    console.log("====================================");
     console.log(stateOfPlay);
-    console.log('====================================');
-    return stateOfPlay = true;
+    console.log("====================================");
+    return (stateOfPlay = true);
 };
-htmlClassNumber.textContent = String(guessCheckNumber);
 var checkGuessNumber = function (guess) {
     if (guess === guessCheckNumber) {
         console.log("====================================");
@@ -63,7 +64,6 @@ htmlClasscheck.addEventListener("click", function () {
             checkGuessNumber(guessNumber);
         }
     }
-    ;
 });
 //=====================click agin btn=====================
 htmlClassAgain.addEventListener("click", againFn);
