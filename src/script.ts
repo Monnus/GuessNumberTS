@@ -37,7 +37,7 @@ const againFn=():boolean=>{
 };
 
 
-htmlClassNumber.textContent = String(guessCheckNumber);
+htmlClassNumber.textContent ="?";
 
 const checkGuessNumber = function (guess: number): void {
   if (guess === guessCheckNumber) {
