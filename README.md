@@ -24,6 +24,6 @@ Note:If perhaps you've given up and want the answer to the mystery number. Open 
 ![Guess correct](./src/img/RightAnswer.png)
 
 
-Access the demo <a href="https://monnus.github.io/guessTheNumberGame/" target="_blank" alt="Preview of app"> here.</a>
+Access the demo <a href="https://monnus.github.io/GuessNumberTS/" target="_blank" alt="Preview of app"> here.</a>
 
 
